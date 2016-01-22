@@ -5,7 +5,7 @@ prog: $(OBJ)
 	g++ $(OBJ) -o proj3G
 
 .C.o: $<
-	g++  -g -I. -c $<
+	g++  -g -I./headers -c $<
 
 clean:
 	rm *.o proj3G
